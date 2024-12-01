@@ -2,29 +2,29 @@
 // Define testimonials/opinions data
 const humanOpinions = [
   {
-    name: "Amrit Nagi",
-    role: "Founder of Tailwind Toolbox",
+    name: "Piete Levels",
+    role: "Solo Entrepreneur",
     opinion:
-      "I've been following Mike's career for a while now and it's amazing just how quickly the quality and variety of his work has developed and evolved! He's always learning or working on something new and constantly refining his work to be the best! His attention to detail, 'can do' attitude and work ethic is refreshing and he will definitely help you succeed!",
+      "Who is Pieter Levels, an entrepreneur who earns $176K a month by developing various products. He has developed his own products, and he has earned crazy money. PhotoAI.com $65K MRR - InteriorAI.com $38K MRR - NomadList.com $38K/mo - RemoteOK.com $35K/mo - The total of that is 176K$/month!!",
   },
   {
-    name: "Gabriel Perales",
-    role: "Software Engineer at Cabify",
+    name: "Jason Thor Hall",
+    role: "Game Developer",
     opinion:
-      "Mike has helped me with many designs, and I couldn't follow his working speed when we worked together. His designs are slick, and he delivers a lot of value; he is constantly iterating his designs and making improvements.",
+      "Hall is a game developer and the founder of Pirate Software, an indie game development studio. He has worked for Blizzard Entertainment, Amazon Games Studios, and the United States Department of Energy.",
   },
   {
-    name: "Volkan Kaya",
-    role: "Founder of Versoly.com",
+    name: "Lex Fridman",
+    role: "Research Computer Scientist",
     opinion:
-      "Mike is a rare breed of designer & developer that understands business needs. He leveraged his previous experience to build out a few landing pages very quickly for Versoly.",
+      "AI researcher working on autonomous vehicles, human-robot interaction, and machine learning at MIT and beyond.",
   },
-  {
-    name: "Mike",
-    role: "Blogger at Raspada",
-    opinion:
-      "I have had the absolute pleasure of working with Mike in the past when building my blog Raspada with its Backend UI or to building a private application for a leading hearing care company. Mike’s knowledge and attention to detail is second to none, and he really understands and listens to his clients (me).",
-  },
+  // {
+  //   name: "Mike",
+  //   role: "Blogger at Raspada",
+  //   opinion:
+  //     "I have had the absolute pleasure of working with Mike in the past when building my blog Raspada with its Backend UI or to building a private application for a leading hearing care company. Mike’s knowledge and attention to detail is second to none, and he really understands and listens to his clients (me).",
+  // },
 ];
 ---
 
@@ -41,14 +41,12 @@ const humanOpinions = [
     <div class="grid grid-cols-1 lg:grid-cols-4 text-secondary gap-6 pt-2 mt-2">
       {
         humanOpinions.map((opinion) => (
-         <div>
+          <div>
             <p class="italic text-2xl block font-bold">
               {opinion.name} {opinion.role}
             </p>
-            <p class="text-sm leading-relaxed mt-6">
-              {opinion.opinion}
-            </p>
-         </div>
+            <p class="text-sm leading-relaxed mt-6">{opinion.opinion}</p>
+          </div>
         ))
       }
     </div>
